@@ -1,0 +1,29 @@
+<NET>
+<VERTEX REL=0.9 TYPE="RV325" COST=49300 NAME="Outer World" SOURCE />
+<VERTEX REL=0.9 TYPE="2921/K9" COST=210000 NAME="Relay 1" />
+<VERTEX REL=0.9 TYPE="2921/K9" COST=210000 NAME="Relay 2" />
+<VERTEX REL=0.6 TYPE="RV325" COST=46300 NAME="Tango" TARGET />
+<VERTEX REL=0.9 TYPE="2921/K9" COST=46585 NAME="Bravo" />
+<VERTEX REL=0.9 TYPE="RV325" COST=43457 NAME="Foxtrot" />
+<VERTEX REL=0.4 TYPE="2921/K9" COST=57434 NAME="Distribution" />
+<VERTEX REL=0.6 TYPE="2921/K9" COST=45743 NAME="Sigma" />
+<VERTEX REL=0.9 TYPE="RV325" COST=44436 NAME="Alpha" />
+<VERTEX REL=0.3 TYPE="RV325" COST=49765 NAME="Beta" />
+<VERTEX REL=0.9 TYPE="2921/K9" COST=41436 NAME="Omega" TARGET />
+<VERTEX REL=0.96 TYPE="2921/K9" COST=40075 NAME="Colt Single Action Army" SOURCE />
+<VERTEX REL=0.1 TYPE="2921/K9" COST=53825 NAME="Smith and Wesson .85" TARGET />
+<VERTEX REL=0.9 TYPE="RV325" COST=49408 NAME="FAMAS" />
+<VERTEX REL=0.7 TYPE="RV325" COST=49854 NAME="Klashnikov AK47a" />
+<EDGE FROM="Outer World" TO="Relay 1" COST=85 NAME="EdgeOWtoR1" REL=0.9 TYPE="Fiber" />
+<EDGE FROM="Outer World" TO="Relay 2" COST=85 NAME="EdgeOWtoR2" REL=0.9 TYPE="Fiber" />
+<EDGE FROM="Relay 1" TO="Relay 2" COST=85 NAME="EdgeR1toR2" REL=0.9 TYPE="Fiber" />
+<EDGE FROM="Relay 1" TO="Distribution" COST=85 NAME="EdgeR1toDis" REL=0.9 TYPE="Fiber" />
+<EDGE FROM="Relay 2" TO="Distribution" COST=85 NAME="EdgeR2toDis" REL=0.9 TYPE="Fiber" />
+<EDGE FROM="Tango" TO="Sigma" COST=85 NAME="EdgeTantoSig" REL=0.9 TYPE="Fiber" />
+<EDGE FROM="Foxtrot" TO="Outer World" COST=85 NAME="EdgeFoxtoOW" REL=0.9 TYPE="Fiber" />
+<EDGE FROM="Sigma" TO="Foxtrot" COST=85 NAME="EdgeSigtoFox" REL=0.9 TYPE="Fiber" />
+<EDGE FROM="Tango" TO="Foxtrot" COST=85 NAME="EdgeTantoFox" REL=0.9 TYPE="Fiber" />
+<EDGE FROM="Alpha" TO="Tango" COST=85 NAME="EdgeAltoTan" REL=0.9 TYPE="Fiber" />
+<EDGE FROM="Beta" TO="Tango" COST=85 NAME="EdgeBetoTan" REL=0.9 TYPE="Fiber" />
+<EDGE FROM="Bravo" TO="Beta" COST=85 NAME="EdgeBrvtoBe" REL=0.9 TYPE="Fiber" />
+</NET>
